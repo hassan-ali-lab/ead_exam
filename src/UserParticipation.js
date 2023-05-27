@@ -1,3 +1,5 @@
+import {Button, Form} from "antd";
+
 const UserParticipation = (props) => {
 
     const submitHandle = (e) => {
@@ -16,12 +18,12 @@ const UserParticipation = (props) => {
     }
 
 
-    return <form onSubmit={submitHandle}>
+    return <Form onSubmit={submitHandle}>
         <label htmlFor="choice">Choice</label>
         <select id="choice" name="choice" disabled={props.disableComponents}>
             {props.choices.map(d => <option key={d.id} value={d.label}>{d.label}</option>)}
         </select>
-        <button type="submit">Submit</button>
-    </form>
+        <Button type="submit">Submit</Button>
+    </Form>
 }
 export default UserParticipation
