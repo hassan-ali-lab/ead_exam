@@ -7,7 +7,7 @@ import PollDisplay from "./PollDisplay";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<React.Fragment>
-    hello
+
     <App/>
 </React.Fragment>);
 
