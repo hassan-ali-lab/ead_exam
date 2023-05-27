@@ -7,3 +7,8 @@ export const data = {
         {"id": 4, "label": "C#", "votes": 0}
     ]
 }
+
+export const users = {
+    "John": "JavaScript",
+    "Jane": "Python"
+}
