@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from "./App";
+import {BrowserRouter, Routes} from "react-router-dom";
+import PollDisplay from "./PollDisplay";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<React.Fragment>
-    <h>Hello World</h>
+    hello
+    <App/>
 </React.Fragment>);
 
