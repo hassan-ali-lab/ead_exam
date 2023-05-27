@@ -50,6 +50,7 @@ class App extends Component {
             <div>
                 <AnotherUserParticipation handleClick={this.handleClick}/>
             </div>
+
         </div>)
     }
 
