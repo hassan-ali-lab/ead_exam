@@ -9,21 +9,21 @@ const UserParticipation = (props) => {
         console.log(choice)
 
 
-        props.handleClick(true)
+        props.handleDisable(true)
         // vote update in data
         props.updateVote(choice)
-
+        console.log(choice)
         e.target.reset()
 
     }
 
 
-    return <Form onSubmit={submitHandle}>
+    return <form onSubmit={submitHandle}>
         <label htmlFor="choice">Choice</label>
         <select id="choice" name="choice" disabled={props.disableComponents}>
             {props.choices.map(d => <option key={d.id} value={d.label}>{d.label}</option>)}
         </select>
-        <Button type="submit">Submit</Button>
-    </Form>
+        <button type="submit">Submit</button>
+    </form>
 }
 export default UserParticipation

@@ -42,7 +42,7 @@ class App extends Component {
             <Space>
                 <ThankYouMessage disableComponents={this.state.disabledComponents}/></Space>
             <Space> <PollDisplay data={this.state.data}/></Space>
-            <div><UserParticipation disableComponents={this.state.disabledComponents} handleClick={this.handleClick}
+            <div><UserParticipation disableComponents={this.state.disabledComponents} handleDisable={this.handleClick}
                                     updateVote={this.updateVote}
                                     choices={this.state.data.choices}
 
